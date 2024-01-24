@@ -1,0 +1,91 @@
+.login-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.login-wallpaper {
+  background-image: url('../../assets/geometry.jpg');
+  background-size: cover;
+  height: 800px;
+  width: 630px;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+}
+
+.login-wrapper {
+  width: 580px;
+  box-sizing: border-box;
+  padding-left: 90px;
+}
+
+.login-welcome {
+  font-size: 24px;
+  font-weight: 600;
+  height: 30px;
+  /* margin: 200px 0 0; */
+}
+
+.login-welcome-descriptions {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.signup-link {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-form {
+  margin-top: 25px;
+}
+
+.input-label {
+  font-size: 14px;
+}
+
+.form-input-type {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  margin: 5px 0 20px 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.ls-8 {
+  letter-spacing: 8px;
+}
+
+.flex--justify-end {
+  display: flex;
+  justify-content: end;
+}
+
+.login-button {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+}
