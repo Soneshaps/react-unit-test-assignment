@@ -9,15 +9,20 @@ const Login = () => {
         <div className="login-wrapper">
           <div className="login-welcome">Welcome!</div>
           <div className="login-welcome-descriptions">
-            <span className="signup-link">Create an account</span> or login to get started using HRMS
+            <a href="#" className="signup-link">
+              Create an account
+            </a>
+            <span> or login to get started using HRMS </span>
           </div>
           <div className="login-form">
             <InputWrapper classNames="ls-8" id="email" label="Email" name="email" type={Types.TEXT} />
             <InputWrapper classNames="ls-8" id="password" label="Password" name="password" type={Types.PASSWORD} />
             <div className="flex--justify-end">
-              <span className="signup-link">Forgot password?</span>
+              <a href="#" className="signup-link">
+                Forgot password?
+              </a>
             </div>
-            <div className="login-button">Login</div>
+            <input type="button" className="login-button" value="Login" />
           </div>
         </div>
       </div>
