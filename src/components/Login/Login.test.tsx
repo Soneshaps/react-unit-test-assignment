@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import Login from './Login';
 
-describe('App', () => {
+describe('Login modules', () => {
   it('renders Login components correctly', () => {
     render(<Login />);
 

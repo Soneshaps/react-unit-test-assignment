@@ -15,8 +15,8 @@ const Login = () => {
             <span> or login to get started using HRMS </span>
           </div>
           <div className="login-form">
-            <InputWrapper classNames="ls-8" id="email" label="Email" name="email" type={Types.TEXT} />
-            <InputWrapper classNames="ls-8" id="password" label="Password" name="password" type={Types.PASSWORD} />
+            <InputWrapper classNames="ls-8" id="email" label="Email" type={Types.TEXT} />
+            <InputWrapper classNames="ls-8" id="password" label="Password" type={Types.PASSWORD} />
             <div className="flex--justify-end">
               <a href="#" className="signup-link">
                 Forgot password?
