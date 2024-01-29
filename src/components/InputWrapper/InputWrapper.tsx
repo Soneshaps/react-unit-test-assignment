@@ -5,17 +5,27 @@ export enum Types {
 interface InputWrapperProps {
   id: string;
   label: string;
-  name: string;
   type: Types;
-  classNames: string;
+  classNames?: string;
+  isDisabled?: boolean;
+  handleChange?: () => void;
 }
 const InputWrapper = (props: InputWrapperProps) => {
+  const { isDisabled = false } = props;
   return (
     <>
       <label htmlFor={props.id} className="input-label">
         {props.label}
       </label>
-      <input type={props.type} name={props.name} id={props.id} className={`form-input-type ${props.classNames}`} />
+      <input
+        data-testid="input-wrapper"
+        type={props.type}
+        name={props.id}
+        id={props.id}
+        className={`form-input-type ${props?.classNames}`}
+        disabled={isDisabled}
+        onChange={() => props.handleChange && props.handleChange}
+      />
     </>
   );
 };
